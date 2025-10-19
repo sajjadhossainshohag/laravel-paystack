@@ -60,7 +60,7 @@ You can publish the configuration file using this command:
 php artisan vendor:publish --provider="Sajjadhossainshohag\Paystack\PaystackServiceProvider"
 ```
 
-A configuration-file named `paystack.php` with some sensible defaults will be placed in your `config` directory:
+A configuration file named `paystack.php` with some sensible defaults will be placed in your `config` directory:
 
 ```php
 <?php
@@ -97,7 +97,7 @@ return [
 
 ## General payment flow
 
-Though there are multiple ways to pay an order, most payment gateways expect you to follow the following flow in your checkout process:
+Though there are multiple ways to pay for an order, most payment gateways expect you to follow the following flow in your checkout process:
 
 ### 1. The customer is redirected to the payment provider
 After the customer has gone through the checkout process and is ready to pay, the customer must be redirected to the site of the payment provider.
@@ -111,14 +111,14 @@ The hash is calculated using the hidden form fields and a non-public secret. The
 The customer arrives on the site of the payment provider and gets to choose a payment method. All steps necessary to pay the order are taken care of by the payment provider.
 
 ### 3. The customer gets redirected back to your site
-After having paid the order the customer is redirected back. In the redirection request to the shop-site some values are returned. The values are usually the order id, a payment result and a hash.
+After having paid the order the customer is redirected back. In the redirection request to the shop site, some values are returned. The values are usually the order id, a payment result and a hash.
 
 The hash is calculated out of some of the fields returned and a secret non-public value. This hash is used to verify if the request is valid and comes from the payment provider. It is paramount that this hash is thoroughly checked.
 
 
 ## Usage
 
-Open your .env file and add your public key, secret key, merchant email and payment url like so:
+Open your .env file and add your public key, secret key, merchant email, and payment URL like so:
 
 ```php
 PAYSTACK_PUBLIC_KEY=xxxxxxxxxxxxx
@@ -126,7 +126,7 @@ PAYSTACK_SECRET_KEY=xxxxxxxxxxxxx
 PAYSTACK_PAYMENT_URL=https://api.paystack.co
 MERCHANT_EMAIL=merchant@gmail.com
 ```
-*If you are using a hosting service like heroku, ensure to add the above details to your configuration variables.*
+*If you are using a hosting service like Heroku, ensure to add the above details to your configuration variables.*
 
 Set up routes and controller methods like so:
 
@@ -213,7 +213,7 @@ class PaymentController extends Controller
 
         dd($paymentDetails);
         // Now you have the payment details,
-        // you can store the authorization_code in your db to allow for recurrent subscriptions
+        // you can store the authorization_code in your DB to allow for recurrent subscriptions
         // you can then redirect or do whatever you want
     }
 }
@@ -245,7 +245,7 @@ Let me explain the fluent methods this package provides a bit here.
 ```php
 /**
  *  This fluent method does all the dirty work of sending a POST request with the form data
- *  to Paystack Api, then it gets the authorization Url and redirects the user to Paystack
+ *  to the Paystack Api, then it gets the authorization URL and redirects the user to Paystack
  *  Payment Page. We've abstracted all of it, so you don't have to worry about that.
  *  Just eat your cookies while coding!
  */
@@ -257,8 +257,8 @@ Paystack::getAuthorizationUrl()->redirectNow();
 paystack()->getAuthorizationUrl()->redirectNow();
 
 /**
- * This fluent method does all the dirty work of verifying that the just concluded transaction was actually valid,
- * It verifies the transaction reference with Paystack Api and then grabs the data returned from Paystack.
+ * This fluent method does all the dirty work of verifying that the just-concluded transaction was actually valid,
+ * It verifies the transaction reference with the Paystack Api and then grabs the data returned from Paystack.
  * In that data, we have a lot of good stuff, especially the `authorization_code` that you can save in your db
  * to allow for easy recurrent subscription.
  */
@@ -270,7 +270,7 @@ Paystack::getPaymentData();
 paystack()->getPaymentData();
 
 /**
- * This method gets all the customers that have performed transactions on your platform with Paystack
+ * This method gets all the customers who have performed transactions on your platform with Paystack
  * @returns array
  */
 Paystack::getAllCustomers();
@@ -305,7 +305,7 @@ Paystack::getAllTransactions();
 paystack()->getAllTransactions();
 
 /**
- * This method generates a unique super secure cryptographic hash token to use as transaction reference
+ * This method generates a unique, super secure cryptographic hash token to use as a transaction reference
  * @returns string
  */
 Paystack::genTranxRef();
@@ -341,7 +341,7 @@ paystack()->fetchSubAccount();
 
 
 /**
-* This method lists the subaccounts associated with your paystack account
+* This method lists the subaccounts associated with your Paystack account
 * @return array
 */
 Paystack::listSubAccounts();
@@ -353,7 +353,7 @@ paystack()->listSubAccounts();
 
 
 /**
-* This method Updates a subaccount to be used for split payments
+* This method updates a subaccount to be used for split payments
 * @return array
 */
 Paystack::updateSubAccount();
@@ -417,17 +417,17 @@ $split = [
 </form>
 ```
 
-When clicking the submit button the customer gets redirected to the Paystack site.
+When clicking the submit button, the customer gets redirected to the Paystack site.
 
-So now we've redirected the customer to Paystack. The customer did some actions there (hopefully he or she paid the order) and now gets redirected back to our shop site.
+So now we've redirected the customer to Paystack. The customer did some actions there (hopefully he or she paid for the order) and now gets redirected back to our shop site.
 
-Paystack will redirect the customer to the url of the route that is specified in the Callback URL of the Web Hooks section on Paystack dashboard.
+Paystack will redirect the customer to the URL of the route that is specified in the Callback URL of the Web Hooks section on the Paystack dashboard.
 
-We must validate if the redirect to our site is a valid request (we don't want imposters to wrongfully place non-paid order).
+We must validate if the redirect to our site is a valid request (we don't want impostors to wrongfully place non-paid order).
 
 In the controller that handles the request coming from the payment provider, we have
 
-`Paystack::getPaymentData()` - This function calls the verification methods and ensure it is a valid transaction else it throws an exception.
+`Paystack::getPaymentData()` - This function calls the verification methods and ensures it is a valid transaction otherwise, it throws an exception.
 
 You can test with these details
 
@@ -441,7 +441,7 @@ CVV: 883
 
 * Charge Returning Customers
 * Add Comprehensive Tests
-* Implement Transaction Dashboard to see all of the transactions in your laravel app
+* Implement the Transaction Dashboard to see all of the transactions in your Laravel app
 
 ## Contributing
 
