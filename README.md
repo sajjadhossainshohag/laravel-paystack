@@ -1,10 +1,10 @@
 # Laravel Paystack
 
-[![Latest Stable Version](https://poser.pugx.org/unicodeveloper/laravel-paystack/v/stable.svg)](https://packagist.org/packages/unicodeveloper/laravel-paystack)
-[![License](https://poser.pugx.org/unicodeveloper/laravel-paystack/license.svg)](LICENSE.md)
+[![Latest Stable Version](https://poser.pugx.org/sajjadhossainshohag/laravel-paystack/v/stable.svg)](https://packagist.org/packages/sajjadhossainshohag/laravel-paystack)
+[![License](https://poser.pugx.org/sajjadhossainshohag/laravel-paystack/license.svg)](LICENSE.md)
 
-[![Quality Score](https://img.shields.io/scrutinizer/g/unicodeveloper/laravel-paystack.svg?style=flat-square)](https://scrutinizer-ci.com/g/unicodeveloper/laravel-paystack)
-[![Total Downloads](https://img.shields.io/packagist/dt/unicodeveloper/laravel-paystack.svg?style=flat-square)](https://packagist.org/packages/unicodeveloper/laravel-paystack)
+[![Quality Score](https://img.shields.io/scrutinizer/g/sajjadhossainshohag/laravel-paystack.svg?style=flat-square)](https://scrutinizer-ci.com/g/sajjadhossainshohag/laravel-paystack)
+[![Total Downloads](https://img.shields.io/packagist/dt/sajjadhossainshohag/laravel-paystack.svg?style=flat-square)](https://packagist.org/packages/sajjadhossainshohag/laravel-paystack)
 
 > This package is a modernized fork of unicodeveloper/laravel-paystack.
 
@@ -15,13 +15,13 @@
 To get the latest version of Laravel Paystack, simply require it
 
 ```bash
-composer require unicodeveloper/laravel-paystack
+composer require sajjadhossainshohag/laravel-paystack
 ```
 
 Or add the following line to the require block of your `composer.json` file.
 
 ```
-"unicodeveloper/laravel-paystack": "1.0.*"
+"sajjadhossainshohag/laravel-paystack": "1.0.*"
 ```
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
