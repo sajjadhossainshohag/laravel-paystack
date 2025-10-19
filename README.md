@@ -450,8 +450,8 @@ Please feel free to fork this package and contribute by submitting a pull reques
 ## Credits
 
 - Original package: [unicodeveloper/laravel-paystack](https://github.com/unicodeveloper/laravel-paystack)
-  by [Prosper Otemuyiwa](https://github.com/unicodeveloper) [Follow on Twitter](https://twitter.com/unicodeveloper)!
-- Updated and maintained by [Shohag](https://github.com/sajjadhossainshohagbd) [Follow on Twitter](https://twitter.com/sajjadshohagbd)!
+  by [Prosper Otemuyiwa](https://github.com/unicodeveloper) ([Follow on Twitter](https://twitter.com/unicodeveloper))!
+- Updated and maintained by [Shohag](https://github.com/sajjadhossainshohagbd) ([Follow on Twitter](https://twitter.com/sajjadshohagbd))!
 
 ## License
 
