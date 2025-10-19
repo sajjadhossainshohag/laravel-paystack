@@ -38,7 +38,7 @@ Once Laravel Paystack is installed, you need to register the service provider. O
 ]
 ```
 
-> If you use **Laravel >= 5.5** you can skip this step and go to [**`configuration`**](https://github.com/unicodeveloper/laravel-paystack#configuration)
+> If you use **Laravel >= 5.5** you can skip this step and go to [**`configuration`**](https://github.com/sajjadhossainshohag/laravel-paystack#configuration)
 
 * `Sajjadhossainshohag\Paystack\PaystackServiceProvider::class`
 
@@ -124,7 +124,7 @@ Open your .env file and add your public key, secret key, merchant email and paym
 PAYSTACK_PUBLIC_KEY=xxxxxxxxxxxxx
 PAYSTACK_SECRET_KEY=xxxxxxxxxxxxx
 PAYSTACK_PAYMENT_URL=https://api.paystack.co
-MERCHANT_EMAIL=unicodeveloper@gmail.com
+MERCHANT_EMAIL=merchant@gmail.com
 ```
 *If you are using a hosting service like heroku, ensure to add the above details to your configuration variables.*
 
