@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Unicodeveloper\Paystack;
+namespace Sajjadhossainshohag\Paystack;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Config;
-use Unicodeveloper\Paystack\Exceptions\IsNullException;
-use Unicodeveloper\Paystack\Exceptions\PaymentVerificationFailedException;
+use Sajjadhossainshohag\Paystack\Exceptions\IsNullException;
+use Sajjadhossainshohag\Paystack\Exceptions\PaymentVerificationFailedException;
 
 class Paystack
 {
@@ -426,7 +426,7 @@ class Paystack
 
             ];
         }
-        
+
         $this->setRequestOptions();
         return $this->setHttpResponse('/customer', 'POST', $data)->getResponse();
     }
@@ -699,7 +699,7 @@ class Paystack
         return $this->setHttpResponse("/subaccount/{$subaccount_code}", "PUT", array_filter($data))->getResponse();
     }
 
-    
+
     /**
      * Get a list of all supported banks and their properties
      * @param $country - The country from which to obtain the list of supported banks, $per_page - Specifies how many records to retrieve per page , 

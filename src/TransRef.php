@@ -1,17 +1,6 @@
 <?php
 
-/*
- * This file is part of the Laravel Paystack package.
- *
- * (c) Prosper Otemuyiwa <prosperotemuyiwa@gmail.com>
- *
- * Source http://stackoverflow.com/a/13733588/179104
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Unicodeveloper\Paystack;
+namespace Sajjadhossainshohag\Paystack;
 
 class TransRef
 {
