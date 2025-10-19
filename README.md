@@ -1,15 +1,12 @@
-# laravel-paystack
+# Laravel Paystack
 
 [![Latest Stable Version](https://poser.pugx.org/unicodeveloper/laravel-paystack/v/stable.svg)](https://packagist.org/packages/unicodeveloper/laravel-paystack)
 [![License](https://poser.pugx.org/unicodeveloper/laravel-paystack/license.svg)](LICENSE.md)
+
 [![Quality Score](https://img.shields.io/scrutinizer/g/unicodeveloper/laravel-paystack.svg?style=flat-square)](https://scrutinizer-ci.com/g/unicodeveloper/laravel-paystack)
 [![Total Downloads](https://img.shields.io/packagist/dt/unicodeveloper/laravel-paystack.svg?style=flat-square)](https://packagist.org/packages/unicodeveloper/laravel-paystack)
 
-## Credits
-
-- Original package: [unicodeveloper/laravel-paystack](https://github.com/unicodeveloper/laravel-paystack)
-  by [Prosper Otemuyiwa](https://github.com/unicodeveloper)
-- Updated and maintained by [Shohag](https://github.com/sajjadhossainshohagbd)
+> This package is a modernized fork of unicodeveloper/laravel-paystack.
 
 ## Installation
 
@@ -450,14 +447,11 @@ CVV: 883
 
 Please feel free to fork this package and contribute by submitting a pull request to enhance the functionalities.
 
-## How can I thank you?
+## Credits
 
-Why not star the github repo? I'd love the attention! Why not share the link for this repository on Twitter or HackerNews? Spread the word!
-
-Don't forget to [follow me on twitter](https://twitter.com/unicodeveloper)!
-
-Thanks!
-Prosper Otemuyiwa.
+- Original package: [unicodeveloper/laravel-paystack](https://github.com/unicodeveloper/laravel-paystack)
+  by [Prosper Otemuyiwa](https://github.com/unicodeveloper) [Follow on Twitter](https://twitter.com/unicodeveloper)!
+- Updated and maintained by [Shohag](https://github.com/sajjadhossainshohagbd) [Follow on Twitter](https://twitter.com/sajjadshohagbd)!
 
 ## License
 
